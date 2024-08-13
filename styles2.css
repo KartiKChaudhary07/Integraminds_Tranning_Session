@@ -1,0 +1,53 @@
+*{
+    width: 100%;
+    height: 100%;
+}
+#html,body{
+    margin: 0;
+    padding: 0;
+}
+.mainbackground{
+    background-image: url(paul-cisneros-vzw6mtO7mYw-unsplash.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    
+  
+    
+}
+.leftimg{
+    background-image: url(logan-weaver-lgnwvr-t1bJyq-Xfag-unsplash.jpg);
+    height: 600px;
+    width: 400px;
+    background-size: cover;
+    float: left;
+    margin-top: 150px;
+    margin-left: 70px;
+    border-radius: 70px;
+    z-index: 999;
+}
+.leftimg h2{
+    position: relative;
+    margin-top: 400px;
+    margin-left:50px ;
+    color: red;
+    display: inline;
+    font-size: 40px;
+    z-index: 999;
+}
+.mainbackground h1{
+    float: right;
+    font-size: 100px;
+    margin-left: 250px;
+    margin-top: 250px;
+    font-size: 200px;
+    display: block;
+    color: rgba(229, 9, 9, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 999;
+    
+    width: 40%;
+    height: 20%;
+
+}

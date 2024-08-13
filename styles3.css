@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#html,body{
+    width: 100%;
+    height: 100%;
+}
+.background{
+    background-image: url(luis-sanchez-xYiOWrQ7n7M-unsplash.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+}
+.background label{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+.background h2{
+    color: aliceblue;
+}
