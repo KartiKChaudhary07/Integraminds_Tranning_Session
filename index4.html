@@ -4,34 +4,93 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <script>
-        // function employee(first_name,Last_name){
-        //     this.first_name="Kartik";
-        //     this.Last_name="chaudhary";
+        // Example of a JavaScript object
+        // function Employee(firstName, lastName) {
+        //     this.firstName = firstName;
+        //     this.lastName = lastName;
         // }
-        // var e=new employee();
-        // console.log(e.first_name);
-        // console.log(e.Last_name);
-        // document.write(e.first_name);
-        // document.write(e.Last_name);
-         // make an object example of javascript?
-        // document.write(employee_details.eid);
-        // function square(num){
-        //     return num*num;
-            
+
+        // var e = new Employee("Kartik", "Chaudhary");
+        // console.log(e.firstName); // Outputs "Kartik"
+        // console.log(e.lastName);  // Outputs "Chaudhary"
+        // document.write(e.firstName + " "); // Displays "Kartik"
+        // document.write(e.lastName);       // Displays "Chaudhary"
+
+        // // Function to find the square of a number
+        // function square(num) {
+        //     return num * num;
+        // }
+
+        // var result = square(4);
+        // document.write("<hr>");
+        // document.write("Square of 4 is: " + result); // Displays "Square of 4 is: 16"
+
+        // Function to check if a number is even
+        // function isEven(num) {
+        //     return num % 2 === 0;
+        // }
+
+        // var number = 4;
+        // document.write("<hr>");
+        // document.write("Is " + number + " even? " + isEven(number)); // Displays "Is 4 even? true"
+
+        // // Function to find the factorial of a given number
+        // function factorial(n) {
+        //     let result = 1;
+        //     for (let i = 1; i <= n; i++) {
+        //         result *= i;
+        //     }
+        //     return result;
+        // }
+
+        // var factorialResult = factorial(5);
+        // document.write("<hr>");
+        // document.write("Factorial of 5 is: " + factorialResult); // Displays "Factorial of 5 is: 120"
+
+        // Comparing two numbers
+        // var a = Number(window.prompt("Enter the first number"));
+        // var b = Number(window.prompt("Enter the second number"));
+        // var res1 = a === b;
+        // var res2 = a == b;
+        // document.write("<hr>");
+        // document.write("The result of strict equality is: " + res1); // Displays true or false
+        // document.write("<hr>");
+        // document.write("The result of loose equality is: " + res2);  // Displays true or false
+        // document.write("<br>");
+        // document.write("<hr>");
+        // document.write(a+""+"+"+b+"+"+"="+(a+b)+"");
+        // var Products=["apple","mango","Watermelon"];
+        // for(var i=0;i<Products.length;i++){
+        //     document.write(i+"-"+Products[i]);
+        //     document.write("<br>");
+        // }
+        // //break and continue in java script  eplain in code
         
-        // }
-        // var result=square(4)
-        // document.write(result);
-        // writw a javascript program to wheather a given number id even or not
-        // write javascript function to find factorial of a given number
-        // 
-        var a=(window.promt("the  number  you enter is"))
-        var b=(window.promt("the  number  you enter is"))
-        var res1=a===b;
-        var res2=a==b;
-        document.write("the result is "+res1)
-        document.write("<hr>")
-        document.write("the result is "+typeof(res1))
+        // document.write("<b></b>")
+        const people = [
+    { name: "John", age: 25, occupation: "Developer" },
+    { name: "Jane", age: 30, occupation: "Designer" },
+    { name: "Bob", age: 35, occupation: "Manager" },
+    { name: "Alice", age: 20, occupation: "Student" },
+    { name: "Mike", age: 40, occupation: "CEO" }
+];
+
+
+const filteredPeople = people.filter(person => person.age > 30);
+
+
+const resultStrings = filteredPeople.map(person => `${person.name} is a ${person.occupation}`);
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const resultList = document.getElementById("result-list");
+    resultStrings.forEach(string => {
+        const listItem = document.createElement("li");
+        listItem.textContent = string;
+        resultList.appendChild(listItem);
+    });
+});
+
     </script>
 </head>
 <body>
