@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filtered People List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #f0f0f0;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>People Older Than 30</h1>
+    <ul id="result-list"></ul>
+
+    <script>
+        const people = [
+            { name: "John", age: 25, occupation: "Developer" },
+            { name: "Jane", age: 30, occupation: "Designer" },
+            { name: "Bob", age: 35, occupation: "Manager" },
+            { name: "Alice", age: 20, occupation: "Student" },
+            { name: "Mike", age: 40, occupation: "CEO" }
+        ];
+        const resultStrings = people
+            .filter(person => person.age > 30)
+            .map(person => `${person.name} is a ${person.occupation}`);
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const resultList = document.getElementById("result-list");
+            resultStrings.forEach(string => {
+                resultList.innerHTML += `<li>${string}</li>`;
+            });
+        });
+    </script>
+    
+</body>
+</html>
